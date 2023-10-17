@@ -16,6 +16,6 @@ function getPath(code) {
 }
 
 
-const path = getPath("Math.hasOwnProperty('min')");
+const path = getPath("Number.constructor('console.log(1)')");
 const evalResult = path.get("body.0.expression").evaluate();
-console.log(evalResult)
+console.log(evalResult.value)
